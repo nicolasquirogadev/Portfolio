@@ -1,0 +1,192 @@
+:root{
+    --bg-dark: #16331b;
+    --bg-darker: #102414;
+    --btn-dark: #163b1c;
+    --text-dark: #f3f3f3;
+    --highlight-dark: #56a87b;
+    --transi: all 0.3s ease-in-out;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+    font-family: "Ubuntu", serif;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    font-size: 1.3rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: var(--text-dark);
+}
+ 
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2% 24px;
+}
+
+.logo{
+    font-size: 1.6rem;
+}
+.logo:hover{
+    font-size: 1.8rem;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: var(--highlight-dark);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 25px; 
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background-color: var(--text-dark);
+}
+
+section {
+    padding: 4dvh;
+    height: 96dvh;
+    margin: 0 10dvw;
+    box-sizing: border-box;
+    min-width: fit-content;
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    gap: 6rem;
+    height: 80dvh;
+}
+
+.img-container {
+    display: flex;
+    height: 400px;
+    margin: auto 0;
+    img {
+     border-radius: 400px;     
+    }
+   
+}
+
+.home-text {
+    align-self: center;
+    text-align: center;
+    p{
+        font-weight: 600;
+        font-size: 1.75rem;
+    }
+    .title{
+        font-size: 4rem;
+        margin: 1.5rem 0;
+    }
+}
+
+.btn-container {
+    display: inline-block;
+    gap: 1rem;
+    height: fit-content;
+    position: relative;
+    top: 30px;
+    margin: 1rem;
+}
+
+button {
+    padding: 1rem;
+    border-radius: 30px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 10px 5px 5px var(--bg-darker);
+    border: solid 5px var(--bg-darker);
+    background-color: var(--btn-dark);
+    color: var(--text-dark);
+    font-weight: 400;
+    font-size: 1.05rem;
+    transition: var(--transi);
+    font-family: "Ubuntu", serif;
+}
+
+button:hover {
+    border: solid 5px var(--btn-dark);
+    background-color: var(--highlight-dark);
+    cursor: pointer;
+    transition: var(--transi);
+}
+
+.socials {
+    button {
+        border: solid 5px var(--btn-dark);
+        background-color: var(--btn-dark);  
+    }
+    button:hover {
+        border: solid 5px var(--btn-dark);
+        background-color: var(--bg-darker);
+        cursor: pointer;
+        transition: var(--transi);
+    }
+i {
+    font-size: 1.6rem;
+}
+}
+
+
+#contact-btn {
+    padding: 1rem;
+    border-radius: 30px;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 10px 5px 5px var(--bg-darker);
+    background-color: var(--bg-darker);
+    border: solid 5px var(--btn-dark);
+    font-weight: 400;
+    font-size: 1.05rem;
+    transition: var(--transi);
+}
+
+#contact-btn:hover{
+    background-color: var(--btn-dark);
+}
