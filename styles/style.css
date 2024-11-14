@@ -22,15 +22,6 @@ body {
     font-family: "Ubuntu", serif;
 }
 
-nav {
-    position: fixed;
-    width: 100%;
-    left: 0;
-    top: 0;
-    z-index: 4;
-    font-size: 1.3rem;
-}
-
 li {
     list-style: none;
 }
@@ -40,14 +31,20 @@ a {
     transition: 0.3s;
     color: var(--text-dark);
 }
- 
 
 .navbar {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    font-size: 1.3rem;
     min-height: 70px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 2% 24px;
+    padding: 1rem;
+    backdrop-filter: blur(10px);
 }
 
 .logo{
@@ -69,6 +66,12 @@ a {
 }
 
 .nav-link:hover {
+    color: var(--highlight-dark);
+    text-decoration: underline;
+    text-underline-offset: 1rem;
+}
+
+.nav-link active{
     color: var(--highlight-dark);
     text-decoration: underline;
     text-underline-offset: 1rem;
@@ -204,24 +207,36 @@ i {
 
 /*MY CRAFT SECTION*/
 #craft {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: fit-content;
 }
 .project-container {
     position: relative;
     margin: 1rem auto;
     padding: 2rem;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    .img-container{
+        width: fit-content;
+        img{
+            max-width: 900px;
+        }
+    }
 }
 
 .project-details {
-    .img-container{
-        position: relative;
-        margin: 1rem auto;
-        img{
-            width: 60%;
-        }
+    position: relative;
+    margin-left: 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-    }
+.project-btn-box {
+    gap: 1rem;
 }
 
 /* ABOUT SECTION */
