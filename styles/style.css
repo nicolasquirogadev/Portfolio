@@ -4,6 +4,7 @@
     --bg-darker: #102414;
     --btn-dark: #163b1c;
     --text-dark: #f3f3f3;
+    --text-description: #bebebe;
     --highlight-dark: #56a87b;
     --transi: all 0.3s ease-in-out;
 }
@@ -157,8 +158,6 @@ section {
 button {
     padding: 1rem;
     border-radius: 30px;
-    justify-content: center;
-    text-align: center;
     box-shadow: 5px 5px 5px var(--bg-darker);
     border: solid 5px var(--bg-darker);
     background-color: var(--btn-dark);
@@ -237,21 +236,46 @@ i {
     margin-left: 4rem;
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
 
-.project-btn-box {
-    gap: 1rem;
+.project-description {
+    margin-top: 1rem;
+    max-width: 200px;
+    color: var(--text-description);
 }
+.project-btn-box {
+    gap: .1rem; 
+    display: flex;
+    flex-direction: column;
+}
+
+.project-btn {
+    background-color: var(--btn-dark);  
+    border: 0;
+    align-content: flex-start;
+    display: flex;
+    i {
+        font-size: 1.3rem;
+        margin-right: .6rem;
+    }
+}
+
+.project-btn:hover {
+    background-color: var(--bg-darker);  
+    border: 0;
+
+}
+
 
 /* ABOUT SECTION */
-#about{
-    max-width: 60dvw;
+
+#about {
     align-self: center;
     margin: 0 auto;
 }
 
 .about-box {
+    max-width: 60dvw;
     display: flex;
     gap: 4rem;
     align-items: center;
@@ -285,6 +309,7 @@ i {
 }
 
 .text-container {
+    line-height: 1.7rem;
 }
 
 .about-img {

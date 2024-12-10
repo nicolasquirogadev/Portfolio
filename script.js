@@ -12,10 +12,10 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
     navMenu.classList.remove("active");
 }));
 
-//home buttons
+//HOME BUTTONS  
 const cvBtn = document.querySelector("#cv-btn");
 cvBtn.addEventListener('click', () => {
-  let cvUrl = './assets/cv.pdf';
+  let cvUrl = './assets/CV.es.NicolasQuiroga.25.pdf';
   let newTab = window.open(cvUrl);
 });
 

@@ -33,3 +33,20 @@
         left: 0;  
     }
 }
+
+@media(max-width:1000px) {
+    *{
+        font-size: .7rem;
+    }
+    .navbar {
+        max-width: 100dvw;
+    }
+    #home {
+        gap: .5rem ;
+        width: 100dvw;
+        .img-container {
+            max-height: 250px;
+        }
+    }
+
+}
