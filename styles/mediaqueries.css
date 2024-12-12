@@ -24,9 +24,13 @@
         text-align: center;
         transition: 0.3s;
     }
-
-    .nav-item{
+    
+    .nav-item {
         margin: 16px 0;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
     }
 
     .nav-menu.active{
@@ -36,17 +40,101 @@
 
 @media(max-width:1000px) {
     *{
-        font-size: .7rem;
+        font-size: .75rem;
+    }
+    section {
+        height: fit-content;
+        margin: 0 auto;
+        align-items: center;
     }
     .navbar {
         max-width: 100dvw;
     }
     #home {
+        display: flex;
+        flex-direction: column;
         gap: .5rem ;
         width: 100dvw;
+        height: 83dvh;
+        margin: 6rem auto;
+        align-items: center;
         .img-container {
-            max-height: 250px;
+            img{
+                height: 275px;
+                width: auto;
+            }
         }
     }
+    .about-box {
+        max-width: 90dvw;
+        flex-direction: column;
+    }
+    .details-box {
+        flex-wrap: wrap;
+        width: 80dvw;
+    }
+    .text-container {
+        text-align: center;
+        display: flex;
+        margin-top: 2rem;
+    }
+    .about-container {
+        flex-wrap: wrap;
+        margin: 1rem auto;
+        gap: 3rem;
+    }
+    .section-arrow {
+        display: none;
+    }
+    .img-container-about {
+        height: auto;
+        margin-left: 1rem;
+        img{
+            width: 275px;
+        }
+        
+    }
+    .details-box {
+        flex-direction: row;
+    }
 
+    #craft {
+        align-items: center;
+        width: 95dvw;
+    }
+
+    .project-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .project-btn-box {
+        flex-direction: row;
+    }
+    .article-container>article>div>h3{
+        font-size: 1.5rem;
+    }
+    .article-container>article>div>h3>i{
+        font-size: 1.5rem;
+        margin-right: .3rem;
+    }
+    .exp-box{
+        margin-top: 3rem;
+    }
+    #contact{
+        height: 100dvh;
+    }
+    #contact>.title-container{
+        margin-top: 4rem;
+    }
+    .contact-box {
+        width: 80dvw;
+    }
+    .link-container>.nav-link{
+        text-align: center;
+    }
+    .link-container>.nav-link>a{
+        font-size: 1.1rem;
+        display: block;
+    }
 }

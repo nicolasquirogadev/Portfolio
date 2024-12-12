@@ -38,7 +38,7 @@ section {
     margin: 0 10%;
     padding: 12dvh 0;
     height: 98dvh;
-    max-width: 75dvw;
+    width: 75dvw;
     box-sizing: border-box;
     position: relative;
     .title-container {
@@ -117,13 +117,14 @@ section {
 #home {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     gap: 6rem;
     .img-container {
-        display: flex;
         height: 400px;
-        margin: auto 0;
+        align-content: center;
         img {
-         border-radius: 400px;     
+         border-radius: 400px;  
+         width: 400px;   
         }
        
     }
@@ -220,6 +221,7 @@ i {
     position: relative;
     margin: 1rem auto;
     padding: 2rem;
+    gap: 2rem;
     display: flex;
     align-items: center;
     width: 80%;
@@ -227,13 +229,13 @@ i {
         width: fit-content;
         img{
             max-width: 100%;
+            min-width: 250px;
         }
     }
 }
 
 .project-details {
     position: relative;
-    margin-left: 4rem;
     display: flex;
     flex-direction: column;
 }
