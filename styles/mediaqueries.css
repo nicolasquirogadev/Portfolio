@@ -24,7 +24,9 @@
         text-align: center;
         transition: 0.3s;
     }
-    
+    .logo>i{
+        font-size: 2.3rem;
+    }
     .nav-item {
         margin: 16px 0;
     }
@@ -40,7 +42,7 @@
 
 @media(max-width:1000px) {
     *{
-        font-size: .75rem;
+        font-size: .8rem;
     }
     section {
         height: fit-content;
@@ -97,17 +99,33 @@
     .details-box {
         flex-direction: row;
     }
+    .details-container {
+        gap: .4rem;
+    }
+    .details-container>i, .details-container>h3{
+        font-size: 1.5rem;
+    }
+    .details-container>p{
+        font-size: 1.2rem;
+    }
 
     #craft {
         align-items: center;
         width: 95dvw;
+        gap: 6rem;
     }
 
     .project-container {
         flex-direction: column;
         gap: 2rem;
     }
-
+    .project-details, .project-description {
+        align-items: center;
+        text-align: center;
+    }
+    .project-title{
+        font-size: 1.8rem;
+    }
     .project-btn-box {
         flex-direction: row;
     }
