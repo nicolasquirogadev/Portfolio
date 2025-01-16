@@ -230,6 +230,7 @@ i {
         img{
             max-width: 100%;
             min-width: 250px;
+            border-radius: 20px;
         }
     }
 }
@@ -240,15 +241,21 @@ i {
     flex-direction: column;
 }
 
+.project-title {
+    text-align: center;
+}
+
 .project-description {
     margin-top: 1rem;
-    max-width: 200px;
+    max-width: 220px;
     color: var(--text-description);
+    text-align: center;
 }
 .project-btn-box {
     gap: .1rem; 
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
 }
 
 .project-btn {
@@ -312,6 +319,7 @@ i {
 
 .text-container {
     line-height: 1.7rem;
+    text-align: center;
 }
 
 .about-img {

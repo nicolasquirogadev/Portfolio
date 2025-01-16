@@ -37,13 +37,13 @@ linkedinBtn.addEventListener('click', () => {
 //PROJECT 1
 const project1git = document.getElementById("project1-git-btn");
 project1git.addEventListener('click', () => {
-  let a = 'https://github.com/nicolasquirogadev/JR-landingpage';
+  let a = 'https://github.com/nicolasquirogadev/brunchasana';
   let newTab = window.open(a);
 });
 
 const project1live = document.getElementById("project1-live-btn");
 project1live.addEventListener('click', () => {
-  let a = 'https://nicolasquirogadev.github.io/JR-landingpage/';
+  let a = 'https://brunchasana.netlify.app/';
   let newTab = window.open(a);
 });
 

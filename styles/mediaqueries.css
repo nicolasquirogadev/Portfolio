@@ -147,6 +147,7 @@
     }
     .contact-box {
         width: 80dvw;
+        flex-direction: column;
     }
     .link-container>.nav-link{
         text-align: center;
